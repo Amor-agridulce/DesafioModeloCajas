@@ -14,25 +14,26 @@
         
         .bandera {
             border: 1px solid black;
-            margin: 5px auto;
             width: 525px;
-            height: 568px;
+            height: 350px;
+            float: left;
+            margin: 20px;
         }
         
-        .bandera-esp_inside-block {
+        .bandera-esp_dentro {
             background-color: yellow;
             border-style: solid;
             border-color: red;
-            border-width: 80px 0;
+            border-width: 90px 0;
             height: 100%;
             width: 100%;
             box-sizing: border-box;
         }
         
-        .bandera-din_top-left-block,
-        .bandera-din_top-right-block,
-        .bandera-din_bottom-left-block,
-        bandera-din_bottom-right-block {
+        .bandera-din_arri-izq,
+        .bandera-din_arri-dere,
+        .bandera-din_abajo-izq,
+        .bandera-din_abajo-dere {
             background-color: red;
             border-color: white;
             border-style: solid;
@@ -40,24 +41,82 @@
             float: left;
             height: 50%;
         }
+        
+        .bandera-din_arri-izq {
+            border-width: 0 20px 20px 0;
+            width: 30%;
+        }
+        
+        .bandera-din_arri-dere {
+            border-width: 0 0 20px 20px;
+            width: 70%;
+        }
+        
+        .bandera-din_abajo-izq {
+            border-width: 20px 20px 0 0;
+            width: 30%;
+        }
+        
+        .bandera-din_abajo-dere {
+            border-width: 20px 0 0 20px;
+            width: 70%;
+        }
+        
+        .bandera-ara,
+        .bandera-jap {
+            background-color: white;
+        }
+        
+        .bandera-ara_izq,
+        .bandera-ara_dere {
+            float: left;
+            height: 100%;
+        }
+        
+        .bandera-ara_izq {
+            background-color: red;
+            width: 25%;
+        }
+        
+        .bandera-ara_dere {
+            border-bottom-color: #000;
+            border-style: solid;
+            border-top-color: #008400;
+            width: 75%;
+            border-width: 115px 0;
+            box-sizing: border-box;
+        }
+        
+        .bandera-jap-circulo {
+            background-color: red;
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            margin: 100px auto;
+        }
     </style>
 </head>
 
 <body>
     <div class="bandera bandera-esp">
-        <div class="bandera-esp_inside-block"></div>
+        <div class="bandera-esp_dentro"></div>
     </div>
 
     <div class="bandera bandera-din">
-        <div class="bandera-din_top-left-block"></div>
-        <div class="bandera-din_top-right-block"></div>
-        <div class="bandera-din_bottom-left-block"></div>
-        <div class="bandera-din_bottom-right-block"></div>
+        <div class="bandera-din_arri-izq"></div>
+        <div class="bandera-din_arri-dere"></div>
+        <div class="bandera-din_abajo-izq"></div>
+        <div class="bandera-din_abajo-dere"></div>
     </div>
 
-    <div class="bandera bandera-ara"></div>
+    <div class="bandera bandera-ara">
+        <div class="bandera-ara_izq"></div>
+        <div class="bandera-ara_dere"></div>
+    </div>
 
-    <div class="bandera bandera-jap"></div>
+    <div class="bandera bandera-jap">
+        <div class="bandera-jap-circulo"></div>
+    </div>
 </body>
 
 </html>
